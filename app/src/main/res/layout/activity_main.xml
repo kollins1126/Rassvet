@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:layout_width="255dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:onClick="onConnectClick"
+        android:text="@string/bt_connect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="222dp"
+        android:layout_height="152dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnConnect">
+
+    </ListView>
+
+    <Button
+        android:id="@+id/btnGetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:onClick="onGetTimeClick"
+        android:text="@string/bt_gettime"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="onSetTimeClick"
+        android:text="@string/bt_settime"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnGetTime"
+        app:layout_constraintTop_toTopOf="@+id/btnGetTime"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/shTime"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onshTimeClick"
+        android:text="@string/df_time"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnSetTime"
+        app:layout_constraintTop_toTopOf="@+id/btnSetTime"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnCurTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:background="#8A8A8A"
+        android:onClick="onCurTimeClick"
+        android:text="@string/bt_curtime"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/shTime"
+        app:layout_constraintTop_toTopOf="@+id/btnSetTime"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnGetRasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onGetRaspClick"
+        android:text="@string/bt_getrasp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="@+id/btnGetTime"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetTime"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSetRasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:onClick="onSetRaspClick"
+        android:text="@string/bt_setrasp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnSortRasp"
+        app:layout_constraintTop_toTopOf="@+id/btnGetRasp"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btnSortRasp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:onClick="onSortRaspClick"
+        android:text="@string/bt_sortrasp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/btnGetRasp"
+        app:layout_constraintTop_toTopOf="@+id/btnGetRasp"
+        tools:visibility="visible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

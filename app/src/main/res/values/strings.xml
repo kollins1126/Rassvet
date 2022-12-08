@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Rassvet</string>
+    <string name="bt_connect">Подключить</string>
+    <string name="bt_gettime">Получить время</string>
+    <string name="bt_settime">Установить время</string>
+    <string name="bt_curtime">Текущее время</string>
+    <string name="bt_getrasp">Получить расписание</string>
+    <string name="bt_sortrasp">Отсортировать расписание</string>
+    <string name="bt_setrasp">Установить расписание</string>
+    <string name="df_time">00:00</string>
+</resources>
